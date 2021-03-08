@@ -6,6 +6,9 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 
+#include "Target.h"
+#include "TopdownGameMode.h"
+
 // Sets default values
 AProjectileActor::AProjectileActor()
 {
@@ -47,6 +50,14 @@ void AProjectileActor::OnActorHitCallback(AActor* SelfActor, AActor* OtherActor,
 	}
 	if (AProjectileActor* projectile = Cast<AProjectileActor>(SelfActor)) {
 		projectile->bouncesBeforeDestroy -= 1;
+
+		if (ATarget* target = Cast<ATarget>(OtherActor)) {
+			if (ATopdownGameMode* gameMode = Cast<ATopdownGameMode>(GetWorld()->GetAuthGameMode())) {
+				gameMode->OnTargetHit();
+			}
+			target->Destroy();
+		}
+
 		if (projectile->bouncesBeforeDestroy == 0) {
 			Destroy();
 		}

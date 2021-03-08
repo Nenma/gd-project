@@ -53,10 +53,10 @@ void UProjectileShooterComponent::Shoot()
 		spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 		FTransform transform;
-		
 		transform.SetLocation(owner->GetActorLocation() + owner->GetActorForwardVector() * 10 + owner->GetActorRightVector() * 5.0f);
 		transform.SetRotation(owner->GetActorRotation().Quaternion());
 		transform.SetScale3D(FVector(1.0f));
+
 		GetWorld()->SpawnActor<AProjectileActor>(bulletClass, transform, spawnParams);
 
 	}
