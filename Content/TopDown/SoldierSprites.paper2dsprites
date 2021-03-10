@@ -1,0 +1,112 @@
+{"frames": {
+
+"Idle_01.png":
+{
+	"frame": {"x":671,"y":2,"w":221,"h":232},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":232},
+	"sourceSize": {"w":221,"h":232},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Idle_02.png":
+{
+	"frame": {"x":444,"y":245,"w":217,"h":234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":234},
+	"sourceSize": {"w":217,"h":234},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Idle_03.png":
+{
+	"frame": {"x":894,"y":2,"w":198,"h":227},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":227},
+	"sourceSize": {"w":198,"h":227},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Idle_04.png":
+{
+	"frame": {"x":444,"y":245,"w":217,"h":234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":234},
+	"sourceSize": {"w":217,"h":234},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_01.png":
+{
+	"frame": {"x":2,"y":2,"w":221,"h":244},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":244},
+	"sourceSize": {"w":221,"h":244},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_02.png":
+{
+	"frame": {"x":2,"y":248,"w":221,"h":235},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":235},
+	"sourceSize": {"w":221,"h":235},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_03.png":
+{
+	"frame": {"x":663,"y":237,"w":221,"h":232},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":232},
+	"sourceSize": {"w":221,"h":232},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_04.png":
+{
+	"frame": {"x":225,"y":245,"w":217,"h":237},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":237},
+	"sourceSize": {"w":217,"h":237},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_05.png":
+{
+	"frame": {"x":886,"y":236,"w":219,"h":231},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":231},
+	"sourceSize": {"w":219,"h":231},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_06.png":
+{
+	"frame": {"x":448,"y":2,"w":221,"h":233},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":233},
+	"sourceSize": {"w":221,"h":233},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Run_07.png":
+{
+	"frame": {"x":225,"y":2,"w":221,"h":241},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":241},
+	"sourceSize": {"w":221,"h":241},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"target": "paper2d", 
+	"image": "SoldierSprites.png",
+	"format": "RGBA8888",
+	"size": {"w":1107,"h":485},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:bf4fe3da204dca1c12f2397696b0f216:7b4fb4cfcd9331f476643f2037fddfd4:fbde1874ade622c595aa5a680dc14d79$"
+}
+}
