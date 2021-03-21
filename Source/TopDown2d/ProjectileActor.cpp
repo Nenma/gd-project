@@ -22,7 +22,7 @@ AProjectileActor::AProjectileActor()
 	projectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>("Projectile movement");
 	projectileMovement->InitialSpeed = 2000.f;
 	projectileMovement->MaxSpeed = 2000.f;
-	projectileMovement->bShouldBounce = true;
+	// projectileMovement->bShouldBounce = true;
 
 	SetRootComponent(staticMesh);
 
@@ -45,9 +45,6 @@ void AProjectileActor::Tick(float DeltaTime)
 
 void AProjectileActor::OnActorHitCallback(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit)
 {
-	if (GEngine) {
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Purple, TEXT("Bullet hit something"));
-	}
 	if (AProjectileActor* projectile = Cast<AProjectileActor>(SelfActor)) {
 		projectile->bouncesBeforeDestroy -= 1;
 
@@ -59,7 +56,7 @@ void AProjectileActor::OnActorHitCallback(AActor* SelfActor, AActor* OtherActor,
 		}
 
 		if (projectile->bouncesBeforeDestroy == 0) {
-			Destroy();
+			// Destroy();
 		}
 	}
 }

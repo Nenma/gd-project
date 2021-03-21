@@ -34,6 +34,14 @@ void UProjectileShooterComponent::TickComponent(float DeltaTime, ELevelTick Tick
 	// ...
 }
 
+void UProjectileShooterComponent::Enable() {
+	Enabled = true;
+}
+
+void UProjectileShooterComponent::Disable() {
+	Enabled = false;
+}
+
 
 
 void UProjectileShooterComponent::Shoot()
@@ -42,7 +50,7 @@ void UProjectileShooterComponent::Shoot()
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Cyan, TEXT("Shoot pressed"));
 	}
 
-	if (bulletClass) {
+	if (bulletClass && Enabled) {
 
 		auto owner = GetOwner();
 
@@ -53,7 +61,7 @@ void UProjectileShooterComponent::Shoot()
 		spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 		FTransform transform;
-		transform.SetLocation(owner->GetActorLocation() + owner->GetActorForwardVector() * 10 + owner->GetActorRightVector() * 5.0f);
+		transform.SetLocation(owner->GetActorLocation() + owner->GetActorForwardVector() * ProjectileSpawnOffsetForward + owner->GetActorRightVector() * ProjectileSpawnOffsetRight);
 		transform.SetRotation(owner->GetActorRotation().Quaternion());
 		transform.SetScale3D(FVector(1.0f));
 
