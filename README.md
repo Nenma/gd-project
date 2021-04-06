@@ -7,7 +7,7 @@
 - Dobrică Ștefan
 
 ## Type of game:
-2D Top-down dungeon crawler
+Isometric
 
 ## Core gameplay:
 The gameplay of our project is based on exploring and making your way through mazes while avoiding obstacles, defeating enemies and collecting prizes and power-ups. From one level to another, the difficulty of the game increases and the rewards and power-ups scale with it.
