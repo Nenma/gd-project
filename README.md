@@ -17,3 +17,5 @@ The goal of the game is for the player to explore as much of the levels as possi
 - Braid
 - Binding of Isaac
 - Hades
+
+[Story](https://docs.google.com/document/d/1uT9N-gHAFmsKk7SPXNrza4Smzfz3rLirMecD4u7BPrU/edit)
