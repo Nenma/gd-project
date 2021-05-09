@@ -18,5 +18,6 @@ public:
 	ATopdownGameState();
 
 	unsigned int HitTargets = 0;
+	bool hasLevelChanged = false;
 
 };
