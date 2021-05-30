@@ -34,15 +34,6 @@ void UProjectileShooterComponent::TickComponent(float DeltaTime, ELevelTick Tick
 	// ...
 }
 
-void UProjectileShooterComponent::Enable() {
-	Enabled = true;
-}
-
-void UProjectileShooterComponent::Disable() {
-	Enabled = false;
-}
-
-
 
 void UProjectileShooterComponent::Shoot()
 {
@@ -50,7 +41,7 @@ void UProjectileShooterComponent::Shoot()
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Cyan, TEXT("Shoot pressed"));
 	}
 
-	if (bulletClass && Enabled) {
+	if (bulletClass) {
 
 		auto owner = GetOwner();
 
