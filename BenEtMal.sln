@@ -13,7 +13,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\Project
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{1CCEC849-CC72-4C59-8C36-2F7C38706D4C}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Games\Epic Games\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\Games\Epic Games\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis
+		..\..\..\..\UnrealEngine\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\UnrealEngine\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
 EndProject
 Global
@@ -63,10 +63,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B7007FFB-F26A-4AFB-AD52-CA5BAACCE248} = {8E2F6A87-1826-34F4-940C-CC23A48F9FE4}
 		{BF3EA450-2EAF-45C6-8086-AA9C549B74A7} = {94A6C6F3-99B3-346E-9557-ABF9D4064DBD}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {73AF3F93-2E5B-4C78-A789-0029C6DB86A0}
+		{B7007FFB-F26A-4AFB-AD52-CA5BAACCE248} = {8E2F6A87-1826-34F4-940C-CC23A48F9FE4}
 	EndGlobalSection
 EndGlobal

@@ -38,7 +38,7 @@ void UProjectileShooterComponent::TickComponent(float DeltaTime, ELevelTick Tick
 void UProjectileShooterComponent::Shoot()
 {
 	if (GEngine) {
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Cyan, TEXT("Shoot pressed"));
+		// GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Cyan, TEXT("Shoot pressed"));
 	}
 
 	if (bulletClass) {
