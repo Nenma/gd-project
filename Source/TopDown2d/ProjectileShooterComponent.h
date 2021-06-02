@@ -24,9 +24,6 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	void Enable();
-	void Disable();
-
 public:
 	UFUNCTION(BlueprintCallable)
 	void Shoot();
@@ -40,7 +37,4 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Info");
 	float ProjectileSpawnOffsetRight;
-
-	UPROPERTY(EditAnywhere, Category = "Info");
-	bool Enabled = false;
 };

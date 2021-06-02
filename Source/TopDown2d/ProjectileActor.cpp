@@ -15,14 +15,14 @@ AProjectileActor::AProjectileActor()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	bouncesBeforeDestroy = 2;
+	bouncesBeforeDestroy = INT_MAX;
 
 	staticMesh = CreateDefaultSubobject<UStaticMeshComponent>("Static mesh");
 
 	projectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>("Projectile movement");
 	projectileMovement->InitialSpeed = 2000.f;
 	projectileMovement->MaxSpeed = 2000.f;
-	// projectileMovement->bShouldBounce = true;
+	projectileMovement->bShouldBounce = true;
 
 	SetRootComponent(staticMesh);
 
@@ -56,7 +56,7 @@ void AProjectileActor::OnActorHitCallback(AActor* SelfActor, AActor* OtherActor,
 		}
 
 		if (projectile->bouncesBeforeDestroy == 0) {
-			// Destroy();
+			Destroy();
 		}
 	}
 }

@@ -28,12 +28,12 @@ public:
 	UFUNCTION()
 	void OnActorHitCallback(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+	class UProjectileMovementComponent* projectileMovement;
+
 private:
 	UPROPERTY(EditAnywhere, Category = "Components")
 	class UStaticMeshComponent* staticMesh;
-
-	UPROPERTY(EditAnywhere, Category = "Components")
-	class UProjectileMovementComponent* projectileMovement;
 
 	UPROPERTY(EditAnywhere, Category = "Settings");
 	uint32 bouncesBeforeDestroy;

@@ -47,7 +47,6 @@ void UMagicChair::DoMagic(ACharacter* character)
 			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Cyan,
 											 TEXT("But in order to advance in your adventure, you will have to touch me!"));
 		}
-		projectileShooter->Enable();
 		
 		StartPosition = GetOwner()->GetActorLocation();
 		EndPosition = StartPosition;
